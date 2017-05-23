@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar color="magic">
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Location</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="addMarker()">
+      <ion-icon name="add"></ion-icon>
+      Marker
+    </button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+
+  <div id="map" style="height : 60%"></div>
+  <button ion-button full color="secondary" (click)="nearMe()">Find Near Me!</button>
+
+</ion-content>

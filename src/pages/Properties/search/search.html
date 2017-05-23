@@ -1,0 +1,58 @@
+<ion-header>
+  <ion-navbar color="magic">
+    <button ion-button menuToggle>
+    <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Search</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="search">
+  <ion-list>
+    <ion-item>
+      <ion-label>Categories</ion-label>
+      <ion-select [(ngModel)]="Categories" multiple="true" cancelText="Cancel" okText="Ok">
+        <ion-option value="For Sale">Sale</ion-option>
+        <ion-option value="For Rent">Rent</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Types of Properties</ion-label>
+      <ion-select [(ngModel)]="Types" multiple="true" cancelText="Cancel" okText="Ok">
+        <ion-option value="House">House</ion-option>
+        <ion-option value="Apartment">Apartment</ion-option>
+        <ion-option value="Rooms">Room</ion-option>
+        <ion-option value="Land">Land</ion-option>
+        <ion-option value="Commercial Properties">Commercial Properties</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Location</ion-label>
+      <ion-select [(ngModel)]="Locations" multiple="true" cancelText="Cancel" okText="Ok">
+        <ion-option value="Kuala Lumpur">Kuala Lumpur</ion-option>
+        <ion-option value="Selangor">Selangor</ion-option>
+        <ion-option value="Putrajaya">Putrajaya</ion-option>
+        <ion-option value="Melaka">Melaka</ion-option>
+        <ion-option value="Johor">Johor</ion-option>
+        <ion-option value="Kedah">Kedah</ion-option>
+        <ion-option value="Kelantan">Kelantan</ion-option>
+        <ion-option value="Labuan">Labuan</ion-option>
+        <ion-option value="Negeri Sembilan">Negeri Sembilan</ion-option>
+        <ion-option value="Pahang">Pahang</ion-option>
+        <ion-option value="Penang">Penang</ion-option>
+        <ion-option value="Perak">Perak</ion-option>
+        <ion-option value="Perlis">Perlis</ion-option>
+        <ion-option value="Sabah">Sabah</ion-option>
+        <ion-option value="Sarawak">Sarawak</ion-option>
+        <ion-option value="Terengganu">Terengganu</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input type="text" placeholder="SEARCH" text-center></ion-input>
+    </ion-item>
+    <button ion-button full color="secondary">FIND</button>
+
+  </ion-list>
+</ion-content>

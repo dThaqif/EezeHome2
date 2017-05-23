@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="magic">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>EezeHome</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="home">
+  <ion-card>
+    <ion-card-header>
+      <h1>Featured Properties</h1>
+    </ion-card-header>
+
+    <img src="http://www.mikesalkin.com/articles/images/house-for-sale.jpg" />
+    <ion-card-content class= "card">
+      <ion-card-title text-center>
+        Advertisement Title
+      </ion-card-title>
+      <p>Type of House:</p>
+      <p>Area of House:</p>
+      <p>Descriptions:</p>
+      <p>Address:</p>
+
+
+      <ion-row no-padding>
+        <ion-col>
+          <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='ios-open-outline'></ion-icon>
+          More Details
+        </button>
+        </ion-col>
+        <ion-col text-center>
+          <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='md-person'></ion-icon>
+          Agent Info
+        </button>
+        </ion-col>
+        <ion-col text-right>
+          <button ion-button clear small color="danger" icon-left>
+          <ion-icon name='share-alt'></ion-icon>
+          Share
+        </button>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
+  
+  <ion-fab bottom center>
+    <button ion-fab mini color="dark" (click)="takePicture()"><ion-icon name= "ios-camera"></ion-icon></button>
+  </ion-fab>
+
+</ion-content>
