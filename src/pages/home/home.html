@@ -3,7 +3,12 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>EezeHome</ion-title>
+    <ion-buttons end>
+      <button ion-button (click)="goToLogOut()">
+      <ion-icon name="log-out"></ion-icon>
+    </button>
+    </ion-buttons>
+      <ion-title>EezeHome</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,7 +20,7 @@
     </ion-card-header>
 
     <img src="http://www.mikesalkin.com/articles/images/house-for-sale.jpg" />
-    <ion-card-content class= "card">
+    <ion-card-content class="card">
       <ion-card-title text-center>
         Advertisement Title
       </ion-card-title>
@@ -47,9 +52,9 @@
       </ion-row>
     </ion-card-content>
   </ion-card>
-  
+
   <ion-fab bottom center>
-    <button ion-fab mini color="dark" (click)="takePicture()"><ion-icon name= "ios-camera"></ion-icon></button>
+    <button ion-fab mini color="dark" (click)="goTotakePicture()"><ion-icon name= "ios-camera"></ion-icon></button>
   </ion-fab>
 
 </ion-content>

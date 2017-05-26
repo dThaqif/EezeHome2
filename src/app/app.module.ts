@@ -6,6 +6,7 @@ import { Geolocation } from '@ionic-native/geolocation';
 import { Location } from '../providers/location';
 import { UserProvider } from '../providers/user-provider';
 import { Camera } from '@ionic-native/camera';
+import { CameraProvider } from '../providers/camera-provider';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -78,6 +79,7 @@ export const firebaseConfig = {
     GoogleMaps,
     Geolocation,
     UserProvider,
+    CameraProvider,
     Location,
     { provide: ErrorHandler, useClass: IonicErrorHandler }
   ]
